@@ -26,6 +26,8 @@ nav > ul {
 }
 
 nav > ul button {
+    font-size: 1em;
+    font-weight: bold;
     flex: 1;
     width: 5em;
     background-color: var(--theme-color); 
@@ -77,14 +79,15 @@ ul {
     justify-content: center;
 }
 
-#opening-hours {
+#opening-hours, #location {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 1em;
 }
 
-.menu-section-header > em {
+.menu-section-header > em, #opening-hours em, #location em {
     border-bottom: 1px solid rgba(245, 245, 245, 0.225);
 }
 

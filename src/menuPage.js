@@ -39,19 +39,6 @@ export const loadMenuPage = () => {
     createMenuSection("Desserts", desserts);
     createMenuSection("Beverages", beverages);
    
-    // const opening_hours = document.createElement("div");
-    // opening_hours.id = "opening-hours";
-    // const opening_hours_header = document.createElement("h3");
-    // opening_hours_header.textContent = "Opening Hours";
-    // const opening_hours_list = document.createElement("ul");
-    // const days = [["Monday", 5, 12], ["Tuesday", 5, 12], ["Wednesday", 5, 12], ["Thursday", 5, 12], ["Friday", 5, 2], ["Saturday", 5, 2]];
-    // days.forEach( (e) => {
-    //     opening_hours_list.appendChild(dayListItem(e[0], e[1], e[2]));
-    // });
-    // opening_hours.appendChild(opening_hours_header);
-    // opening_hours.appendChild(opening_hours_list);
-    // addContent(opening_hours);
-
 };
 
 
