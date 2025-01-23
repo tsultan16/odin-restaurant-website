@@ -5,7 +5,6 @@ import odinImage from "./images/odin.png";
 console.log(greeting);
 
 
-const image = document.createElement("img");
-image.src = odinImage;
-   
-document.body.appendChild(image);
+// const image = document.createElement("img");
+// image.src = odinImage;
+// document.body.appendChild(image);
