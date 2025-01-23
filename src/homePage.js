@@ -12,7 +12,16 @@ export const dayListItem = (day, open_hour, close_hour) => {
     return item;
 };
 
+const clearAllContent = () => {
+    while (content.lastChild) {
+        content.lastChild.remove();
+    }
+};
+
 export const loadHomePage = () => {
+
+    // clear out all existing content first
+    clearAllContent();
 
     const header = document.createElement("h1");
     header.textContent = "Don Giovanni's";
