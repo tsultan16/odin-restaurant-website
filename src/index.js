@@ -1,45 +1,13 @@
-import {addContent, dayListItem} from "./utils.js";
+import {loadHomePage} from "./homePage.js";
 import "./style.css";
-import logoImage from "./images/restaurant-logo.svg";
 
 console.log("Hello World!");
 
 
-
 // render homepage content
+loadHomePage()
 
 
-const header = document.createElement("h1");
-header.textContent = "Don Giovanni's";
-content.appendChild(header);
-
-const logo_container = document.createElement("div");
-logo_container.id = "logo-container";
-const logo = document.createElement("img");
-logo.src = logoImage;
-logo.id = "logo";
-addContent(logo_container.appendChild(logo));
-
-
-const tagline = document.createElement("em");
-tagline.textContent = "Savor the Heart of Italy, One Bite at a Time.";
-addContent(document.createElement("h2").appendChild(tagline)); 
-
-const desc = document.createElement("p");
-desc.textContent = "At Don Giovanni's, we bring the authentic flavors of Italy to your table. From handcrafted pastas to wood-fired pizzas, every dish is prepared with the finest ingredients and a passion for tradition. Whether you're celebrating a special occasion or craving a comforting meal, our warm ambiance and rich culinary heritage promise an unforgettable dining experience. Bon appetite!"
-addContent(desc);
-
-const opening_hours = document.createElement("div");
-const opening_hours_header = document.createElement("h3");
-opening_hours_header.textContent = "Opening Hours";
-const opening_hours_list = document.createElement("ul");
-const days = [["Monday", 5, 12], ["Tuesday", 5, 12], ["Wednesday", 5, 12], ["Thursday", 5, 12], ["Friday", 5, 2], ["Saturday", 5, 2]];
-days.forEach( (e) => {
-    opening_hours_list.appendChild(dayListItem(e[0], e[1], e[2]));
-});
-opening_hours.appendChild(opening_hours_header);
-opening_hours.appendChild(opening_hours_list);
-addContent(opening_hours);
 
 
 

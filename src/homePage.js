@@ -23,18 +23,21 @@ export const loadHomePage = () => {
     const logo = document.createElement("img");
     logo.src = logoImage;
     logo.id = "logo";
-    addContent(logo_container.appendChild(logo));
+    logo_container.appendChild(logo)
+    addContent(logo_container);
     
-    
+    const tagline_header = document.createElement("h2");
     const tagline = document.createElement("em");
     tagline.textContent = "Savor the Heart of Italy, One Bite at a Time.";
-    addContent(document.createElement("h2").appendChild(tagline)); 
+    tagline_header.appendChild(tagline);
+    addContent(tagline_header); 
     
     const desc = document.createElement("p");
     desc.textContent = "At Don Giovanni's, we bring the authentic flavors of Italy to your table. From handcrafted pastas to wood-fired pizzas, every dish is prepared with the finest ingredients and a passion for tradition. Whether you're celebrating a special occasion or craving a comforting meal, our warm ambiance and rich culinary heritage promise an unforgettable dining experience. Bon appetite!"
     addContent(desc);
     
     const opening_hours = document.createElement("div");
+    opening_hours.id = "opening-hours";
     const opening_hours_header = document.createElement("h3");
     opening_hours_header.textContent = "Opening Hours";
     const opening_hours_list = document.createElement("ul");
