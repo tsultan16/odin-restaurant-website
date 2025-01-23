@@ -42,7 +42,7 @@ export const loadHomePage = () => {
     addContent(tagline_header); 
     
     const desc = document.createElement("p");
-    desc.textContent = "At Don Giovanni's, we bring the authentic flavors of Italy to your table. From handcrafted pastas to wood-fired pizzas, every dish is prepared with the finest ingredients and a passion for tradition. Whether you're celebrating a special occasion or craving a comforting meal, our warm ambiance and rich culinary heritage promise an unforgettable dining experience. Bon appetite!"
+    desc.textContent = "At Don Giovanni's, we bring the authentic flavors of Italy to your table. From handcrafted pastas to wood-fired pizzas, every dish is prepared with the finest ingredients and a passion for tradition. Whether you're celebrating a special occasion or craving a comforting meal, our warm ambiance and rich culinary heritage promise an unforgettable dining experience. Bon appetit!"
     addContent(desc);
     
     const opening_hours = document.createElement("div");

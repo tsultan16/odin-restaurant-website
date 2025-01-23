@@ -36,7 +36,7 @@ nav > ul button {
 }
 
 #home, #menu {
-    border-right: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 25, 9);
 }
 
 nav > ul button:hover {
@@ -56,7 +56,7 @@ header {
 #content {
     width: 60vw;
     margin: 2em;
-    padding: 1.5em 3em;
+    padding: 1.5em 5em;
 
     display: flex;
     flex-direction: column;
@@ -84,6 +84,10 @@ ul {
     gap: 1em;
 }
 
+.menu-section-header > em {
+    border-bottom: 1px solid rgba(245, 245, 245, 0.225);
+}
+
 .menu-item-name-price {
     display: flex;
     justify-content: space-between;
@@ -91,7 +95,7 @@ ul {
 }
 
 .menu-item-price {
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 .menu-item-desc {

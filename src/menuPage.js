@@ -58,6 +58,7 @@ export const loadMenuPage = () => {
 
 const createMenuSection = (name, items) => {
     const tagline_header = document.createElement("h2");
+    tagline_header.classList.add("menu-section-header");
     const tagline = document.createElement("em");
     tagline.textContent = name;
     tagline_header.appendChild(tagline);
