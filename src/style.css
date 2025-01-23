@@ -83,3 +83,19 @@ ul {
     justify-content: center;
     gap: 1em;
 }
+
+.menu-item-name-price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2em;
+}
+
+.menu-item-price {
+    font-size: 0.8em;
+}
+
+.menu-item-desc {
+    text-align: left;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}

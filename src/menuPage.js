@@ -79,20 +79,22 @@ const createMenuItem = (item_info) => {
     itemDiv.classList.add("menu-item");
     
     const namePriceDiv = document.createElement("div");
-    const name = document.createElement("h5");
+    namePriceDiv.classList.add("menu-item-name-price");
+    const name = document.createElement("h4");
+    name.classList.add("menu-item-name");
     name.textContent = item_info[0];
     const price = document.createElement("div");
+    price.classList.add("menu-item-price");
     price.textContent = item_info[2];
     namePriceDiv.appendChild(name);
     namePriceDiv.appendChild(price);
     
-    const descDiv = document.createElement("div");
     const desc = document.createElement("p");
+    desc.classList.add("menu-item-desc");
     desc.textContent = item_info[1];
-    descDiv.appendChild(desc);
-
+    
     itemDiv.appendChild(namePriceDiv);
-    itemDiv.appendChild(descDiv);
+    itemDiv.appendChild(desc);
     listItem.appendChild(itemDiv);
     
     return listItem;
