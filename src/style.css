@@ -15,24 +15,34 @@ body {
     align-items: center;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
 nav > ul {
     margin-top: 1em;
     display: flex;
-    justify-content: center;
-    gap: 2em;
 }
 
 nav > ul button {
-    padding: 0.5em 1.5em;
-    background-color: var(--theme-color-shadow);
-    color: whitesmoke;
+    flex: 1;
+    width: 5em;
+    background-color: var(--theme-color); 
+    color: rgba(0, 255, 157, 0.783);
     border: 0;
-    border-radius: 0.2em;
+    
+    text-align: center;
+}
+
+#home, #menu {
+    border-right: 2px solid rgb(0, 0, 0);
 }
 
 nav > ul button:hover {
     cursor: pointer;
-    box-shadow: 0 0 5px 3px rgba(127, 255, 212, 0.502);
+    box-shadow: 0 4px 2px -3px rgba(127, 255, 212, 0.502);
+    color: white;
 }
 
 #logo {
