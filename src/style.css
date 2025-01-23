@@ -2,15 +2,37 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    --theme-color : rgb(8, 39, 33);
+    --theme-color-shadow : rgba(36, 184, 155, 0.553);
 }
 
 body {
-    background-color: rgb(8, 39, 33);
+    background-color: var(--theme-color);
     color: whitesmoke;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+nav > ul {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav > ul button {
+    padding: 0.5em 1.5em;
+    background-color: var(--theme-color-shadow);
+    color: whitesmoke;
+    border: 0;
+    border-radius: 0.2em;
+}
+
+nav > ul button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px 3px rgba(127, 255, 212, 0.502);
 }
 
 #logo {
@@ -29,7 +51,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 3em;
-    box-shadow: 0 0 5px 4px rgba(36, 184, 155, 0.553);
+    box-shadow: 0 0 10px 4px var(--theme-color-shadow);
 }
 
 ul {
